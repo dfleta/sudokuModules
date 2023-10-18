@@ -1,6 +1,6 @@
 # sudokuModules
 
-Kata sobre programación modular en Python, a partir de uno de los ejercicios propuestos en el _problem set_ de la _Lesson 3: How to Manage Data_ del curso [_Intro to computer science_](https://www.youtube.com/watch?v=9nkR2LLPiYo&list=PLAwxTw4SYaPmjFQ2w9j05WDX8Jtg5RXWW) del Prof. Dave Evans @evansuva  en Udacity. 
+Kata sobre programación modular en Python, a partir de uno de los ejercicios propuestos en el _problem set_ de la _Lesson 3: How to Manage Data_ del curso [_Intro to computer science_](https://www.youtube.com/watch?v=9nkR2LLPiYo&list=PLAwxTw4SYaPmjFQ2w9j05WDX8Jtg5RXWW) del Prof. Dave Evans [@evansuva](https://github.com/evansuva) en Udacity. 
 
 Se trata de investigar y comprender los contextos de ejecución al invocar módulos Python.
 
