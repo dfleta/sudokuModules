@@ -1,6 +1,6 @@
 # sudokuModules
 
-Kata sobre programación modular en Python.
+Kata sobre programación modular en Python, a partir de uno de los ejercicios propuestos en el _problem set_ de la _Lesson 3: How to Manage Data_ del curso [_Intro to computer science_](https://www.youtube.com/watch?v=9nkR2LLPiYo&list=PLAwxTw4SYaPmjFQ2w9j05WDX8Jtg5RXWW) del Prof. Dave Evans @evansuva  en Udacity. 
 
 Se trata de investigar y comprender los contextos de ejecución al invocar módulos Python.
 
@@ -15,16 +15,16 @@ No se utiliza una suite de testing, ya que se accede a los casos test utilizando
 
 No se utiliza el nombre `test` en el directorio con los casos test porque sino el entorno Python intenta importar desde ese paquete los módulos que no encuentra cuando importamos el contenido del directorio con los casos test (precedencia de nombre).
 
-## Cómo ejecutarlo
+## Uso
 
-Ejecutar `sudoku.py` desde consola en el directorio raíz del proyecto IS OK.
+Ejecutar `sudoku.py` desde consola en el directorio raíz del proyecto IS OK:
 
 `$ python3 sudoku.py`
 
-Ejecutar `checkSudoku.py` desde el directorio raíz del proyecto IS NOT OK pues el contexto de
-ejecución será el directorio raíz y al cambiar el `path` a `..` las rutas relativas a las depedencias no se construyen bien.
+Ejecutar `checkSudoku.py` desde el directorio raíz del proyecto IS NOT OK 
+pues el contexto de ejecución será el directorio raíz y al cambiar el `path` a `..` las rutas relativas a las depedencias no se construyen bien.
 
-`$ python3 src/checkSudoku.py` NO!!
+`$ python3 src/checkSudoku.py` IS NOT OK
 
 Ejecutar `checkSudoku.py` desde el directorio `src` del proyecto IS OK:
 
