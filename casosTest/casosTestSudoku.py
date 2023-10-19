@@ -37,4 +37,14 @@ irregular2 = [[1, 2, 3],
               [3, 1]]
 nuevo = [[]]
 
-# otro = [[1]]
+# Para evitar importar una variable al usar:
+# from modulo import *
+# se emplea __nombreVariable
+# En nuestro caso utilizo import as
+# porque necesito noombrar el espacio de nombres
+# que define de este modulo
+# por lo que no puedo usar *
+# Este caso test no pasa el filtro
+# attr.startswith('__') el el main
+
+__oculto = [[1]]
