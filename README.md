@@ -34,3 +34,11 @@ Ejecutar `checkSudoku.py` desde el directorio `src` del proyecto IS OK:
 Ejecutar cada módulo de las funciones SRP desde el contexto `src` IS OK:
 
 `src $ python3 checkCuadrado.py`
+
+## Casos test
+
+Cómo parametrizar casos test:
+
+- [How to parametrize fixtures and test functions](https://docs.pytest.org/en/stable/how-to/parametrize.html)
+
+- [Parametrization examples.](https://docs.pytest.org/en/stable/example/parametrize.html#paramexamples)
