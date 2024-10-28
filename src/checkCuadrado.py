@@ -1,4 +1,9 @@
 
+# Se incluyen unos prints estilo devil guide to debugging
+# para hacer explícita la ejecución del código de un módulo
+# cuando lo importamos y entender el comportamiento 
+# de los Mixed Usage Modes __name__ y  __main__.
+
 print("Esto es la pre-funcion checkCuadrado")
 
 def checkCuadrado(sudoku):
