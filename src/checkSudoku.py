@@ -1,34 +1,32 @@
-# encoding: utf-8
 
-# THREE GOLD STARS
+## ENUNCIADO ##
 
-# Sudoku [http://en.wikipedia.org/wiki/Sudoku]
-# is a logic puzzle where a game
-# is defined by a partially filled
-# 9 x 9 square of digits where each square
-# contains one of the digits 1,2,3,4,5,6,7,8,9.
-# For this question we will generalize
-# and simplify the game.
+# Sudoku [https://es.wikipedia.org/wiki/Sudoku]
+# es un juego de puzle logico donde un partida
+# esta definida por un cuadrado de digitos 
+# 9 x 9 parcialmente cubierto  
+# donde cada cuadrado contiene uno de los digitos 
+# 1,2,3,4,5,6,7,8,9.
+# Para este ejercicio generalizaremos
+# y simplificaremos el juego.
 
-# Define a procedure, check_sudoku,
-# that takes as input a square list
-# of lists representing an n x n
-# sudoku puzzle solution and returns the boolean
-# True if the input is a valid
-# sudoku square and returns the boolean False
-# otherwise.
+# Define una funcion -check_sudoku-
+# que toma como entrada una lista de listas
+# que representa una solucion n x n al sudoku
+# y devuelve el booleano True si la entrada
+# es un sudoku y False sino.
 
-# A valid sudoku square satisfies these
-# two properties:
+# Un sudoku valido satisface estas dos propiedades:
 
-#   1. Each column of the square contains
-#       each of the whole numbers from 1 to n exactly once.
+#   1. Cada columna del cuadrado contiene
+#      cada uno de los numeros de 1 a n exactamente una vez.
 
-#   2. Each row of the square contains each
-#       of the whole numbers from 1 to n exactly once.
+#   2. Cada fila del cuadrado contiene
+#      cada uno de los numeros de 1 a n exactamente una vez.
 
-# You may assume the the input is square and contains at
-# least one row and column.
+
+
+## KATA MODULOS ##
 
 # Si ejecutamos este modulo desde su directorio actual
 # el contexto de ejecucion es src y no es necesario
