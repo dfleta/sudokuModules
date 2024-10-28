@@ -8,7 +8,7 @@ import casosTest.casosTestSudoku as casosTest
                             (casosTest.numero_repetido_fila_columna, False),
                             (casosTest.numero_repetido_columna, False),
                             (casosTest.numero_no_presente, False),
-                            (casosTest.numero_fuera_del_rango, False),
+                            pytest.param(casosTest.numero_fuera_del_rango, False, marks=pytest.mark.barricada),
                             (casosTest.caracteres, False),
                             (casosTest.numeros_reales, False),
                             (casosTest.irregular_fila, False),
