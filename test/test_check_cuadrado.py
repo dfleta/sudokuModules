@@ -4,14 +4,14 @@ import casosTest.casosTestSudoku as casosTest
 
 
 @pytest.mark.parametrize("sudoku, sano",
-                         [  (casosTest.correct, True),
-                            (casosTest.incorrect, True),
-                            (casosTest.incorrect1, True),
-                            (casosTest.incorrect2, True),
-                            (casosTest.incorrect3, True),
-                            (casosTest.incorrect4, True),
-                            (casosTest.incorrect5, True),
-                            (casosTest.irregular, False),
-                            (casosTest.irregular2, False)])
-def test_sudoku_valido(sudoku, sano):
+                         [  (casosTest.correcto, True),
+                            (casosTest.numero_repetido_fila_columna, True),
+                            (casosTest.numero_repetido_columna, True),
+                            (casosTest.numero_no_presente, True),
+                            (casosTest.numero_fuera_del_rango, True),
+                            (casosTest.caracteres, True),
+                            (casosTest.numeros_reales, True),
+                            (casosTest.irregular_fila, False),
+                            (casosTest.irregular_columna, False)])
+def test_check_cuadrado(sudoku, sano):
     assert checkCuadrado(sudoku) == sano
