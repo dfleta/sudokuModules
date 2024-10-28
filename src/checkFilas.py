@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     for attr in sorted(casosTest.__dict__):
         # Scan namespace keys (or enumerate) del objeto modulo checkCuadrado
-        # Asi podemos añadir todos los casos que queramos 
+        # Asi podemos añadir todos los casos que queramos
         # en la unidad cassTestSudoku sin modificar este codigo
         if attr.startswith('__'):
             pass
