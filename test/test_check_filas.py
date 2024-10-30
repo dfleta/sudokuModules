@@ -3,6 +3,7 @@ from src.checkFilas import checkFilas
 import casosTest.casosTestSudoku as casosTest
 
 
+@pytest.mark.filas_validas
 @pytest.mark.parametrize("sudoku, sano",
                          [  (casosTest.correcto, True),
                             (casosTest.numero_repetido_fila_columna, False),

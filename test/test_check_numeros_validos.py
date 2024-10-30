@@ -3,6 +3,7 @@ from src.checkNumerosValidos import checkNumerosValidos
 import casosTest.casosTestSudoku as casosTest
 
 
+@pytest.mark.numeros_validos
 @pytest.mark.parametrize("sudoku, sano",
                          [  (casosTest.correcto, True),
                             (casosTest.numero_repetido_fila_columna, True),

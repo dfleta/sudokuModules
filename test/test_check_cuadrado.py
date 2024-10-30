@@ -2,7 +2,7 @@ import pytest
 from src.checkCuadrado import checkCuadrado
 import casosTest.casosTestSudoku as casosTest
 
-
+@pytest.mark.es_cuadrado
 @pytest.mark.parametrize("sudoku, sano",
                          [  (casosTest.correcto, True),
                             (casosTest.numero_repetido_fila_columna, True),
