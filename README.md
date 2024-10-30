@@ -42,3 +42,34 @@ Cómo parametrizar casos test:
 - [How to parametrize fixtures and test functions](https://docs.pytest.org/en/stable/how-to/parametrize.html)
 
 - [Parametrization examples.](https://docs.pytest.org/en/stable/example/parametrize.html#paramexamples)
+
+### Uso
+
+```python
+[pytest]
+markers = 
+    barricada: situaciones que implican precondiciones
+    es_cuadrado: el sudoku es una matriz n*n
+    numeros_validos: el sudoku esta formado por numeros enteros en el rango 1 a numeros
+    filas_validas: no existen numeros repetidos en las filas
+    columnas_validas: no existen numeros repetidos en las columnas
+```
+
+En los casos test parametrizados utilizamos el marker con esta notación:
+
+```python
+@pytest.mark.filas_validas
+@pytest.mark.parametrize("sudoku, sano",
+                         # resto de casos test
+                         [pytest.param(casosTest.numero_fuera_del_rango,
+                                         True,
+                                         marks=pytest.mark.barricada)])
+```
+
+Selección del marker de los casos test parametrizados:
+
+`pytest -m barricada`
+
+Selección del marker en el resto de casos test:
+
+`pytest -m numeros_validos`
