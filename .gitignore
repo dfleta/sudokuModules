@@ -51,6 +51,12 @@ coverage.xml
 .pytest_cache/
 cover/
 
+# ruff
+.ruff_cache/
+
+# uv
+.python-version
+
 # Translations
 *.mo
 *.pot
