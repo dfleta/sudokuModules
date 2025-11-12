@@ -1,11 +1,10 @@
-
 ## ENUNCIADO ##
 
 # Sudoku [https://es.wikipedia.org/wiki/Sudoku]
 # es un juego de puzle logico donde un partida
-# esta definida por un cuadrado de digitos 
-# 9 x 9 parcialmente cubierto  
-# donde cada cuadrado contiene uno de los digitos 
+# esta definida por un cuadrado de digitos
+# 9 x 9 parcialmente cubierto
+# donde cada cuadrado contiene uno de los digitos
 # 1,2,3,4,5,6,7,8,9.
 # Para este ejercicio generalizaremos
 # y simplificaremos el juego.
@@ -25,7 +24,6 @@
 #      cada uno de los numeros de 1 a n exactamente una vez.
 
 
-
 ## KATA MODULOS ##
 
 # Si ejecutamos este modulo desde su directorio actual
@@ -38,7 +36,8 @@
 # que depende checkSudoku para que los encuentre
 
 import sys
-sys.path.append('..')
+
+sys.path.append("..")
 
 from src.checkCuadrado import checkCuadrado
 from src.checkNumerosValidos import checkNumerosValidos
@@ -47,13 +46,15 @@ from src.checkColumnas import checkColumnas
 
 
 def checkSudoku(sudoku):
+    return (
+        checkCuadrado(sudoku)
+        and checkNumerosValidos(sudoku)
+        and checkFilas(sudoku)
+        and checkColumnas(sudoku)
+    )
 
-    return checkCuadrado(sudoku) and checkNumerosValidos(sudoku) \
-        and checkFilas(sudoku) and checkColumnas(sudoku)
 
-
-if __name__ == '__main__':
-
+if __name__ == "__main__":
     print("Esto es el main de checkSudoku")
 
     # Cuando ejecuto un programa python el directorio
@@ -70,7 +71,8 @@ if __name__ == '__main__':
     # Lo dejo para hacer explicita la ruta relativa
     # a las dependencias del directorio casosTest
     import sys
-    sys.path.append('..')
+
+    sys.path.append("..")
 
     import casosTest.casosTestSudoku as casosTest
 
@@ -78,7 +80,7 @@ if __name__ == '__main__':
         # Scan namespace keys (or enumerate) del objeto modulo checkCuadrado
         # Asi podemos añadir todos los casos que queramos
         # en la unidad cassTestSudoku sin modificar este codigo
-        if attr.startswith('__'):
+        if attr.startswith("__"):
             pass
             # Skip atributo
         else:
