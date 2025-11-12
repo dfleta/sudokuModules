@@ -73,3 +73,8 @@ Selección del marker de los casos test parametrizados:
 Selección del marker en el resto de casos test:
 
 `pytest -m numeros_validos`
+
+
+## Test parametrizados y markers
+
+Consulta el documento:  [test parametrizados y markers](./test_parametrizados.md)
